@@ -6,7 +6,7 @@ Lidar sensing gives us high resolution data by sending out thousands of laser si
 
 ## Steps Dealing with PCD Data
 
- <div align=center><img src="./README.assets/steps.gif" alt="Kdtree_insert.png" align=center /></div>
+ <div align=center><img src="./README.assets/steps.gif" alt="steps.gif" align=center /></div>
 
 ## Stream PCD
 
@@ -29,7 +29,7 @@ Lidar sensing gives us high resolution data by sending out thousands of laser si
 
 RANSAC stands for Random Sample Consensus, and is a method for detecting outliers in data. RANSAC runs for a max number of iterations, and returns the model with the best fit. Each iteration randomly picks a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model.
 
-![ransac](README.assets/ransac.gif)
+<div align=center><img src="./README.assets/ransac.gif" alt="ransac.gif" align=center /></div>
 
 One type of RANSAC version selects the smallest possible subset of points to fit. For a line, that would be two points, and for a plane three points. Then the number of inliers are counted, by iterating through every remaining point and calculating its distance to the model. The points that are within a certain distance to the model are counted as inliers. The iteration that has the highest number of inliers is then the best model.
 
@@ -72,7 +72,7 @@ Once the KD-Tree method for searching for nearby points is implemented, its not 
 <div align=center><img src="./README.assets/Kdtree_cluster.png" width = "450" height = "400" alt="Kdtree_cluster.png" align=center />  </div>
 <p>
     <b>
-    <center>Each of the three nearby clusters is colored differently, red, blue and green</center> 
+    <span> <center>Each of the three nearby clusters is colored differently, red, blue and green</center> </span> 
     </b>
 </p>
 
