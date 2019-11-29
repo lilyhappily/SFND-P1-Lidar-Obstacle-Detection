@@ -7,6 +7,7 @@ Lidar sensing gives us high resolution data by sending out thousands of laser si
 ## Steps Dealing with PCD Data
 
 ![steps](README.assets/steps.gif)
+ <div align=center><img src="./README.assets/steps.gif" alt="Kdtree_insert.png" align=center /></div>
 
 ## Stream PCD
 
