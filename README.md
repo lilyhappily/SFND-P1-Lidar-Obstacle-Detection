@@ -80,6 +80,11 @@ Once the KD-Tree method for searching for nearby points is implemented, its not 
     </b>
 </p>
 
+<p align="center">
+           <a><img src="./README.assets/Kdtree_cluster.png" width = "450" height = "400" alt="Kdtree_cluster.png" align=center ></a>
+           <br>Each of the three nearby clusters is colored differently, red, blue and green
+      </p>
+
 ## Bounding Boxes
 
 After clustering the points, I add bounding boxes around the clusters. The bounding box volume could also be thought of as space the car is not allowed to enter, or it would result in a collision.
