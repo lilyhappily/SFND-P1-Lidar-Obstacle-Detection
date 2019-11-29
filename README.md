@@ -53,7 +53,7 @@ A KD-Tree is a binary tree that splits points between alternating axes. By separ
 
 <p align="center">
            <a><img src="./README.assets/Kdtree_insert.png" width = "400" height = "400" alt="Kdtree_insert.png"></a>
-           <b>Tree sepparating x and y region
+           <br>Tree sepparating x and y region
       </p>
 	
 **Searching Points in a KD-Tree:**
