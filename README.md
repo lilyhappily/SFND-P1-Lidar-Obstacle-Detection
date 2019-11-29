@@ -50,9 +50,10 @@ A KD-Tree is a binary tree that splits points between alternating axes. By separ
 * A point at depth 2 will split the x region again, so the split dimension number can actually be calculated as depth % d, where d is the number of dimensions we are working with. 
 
 * The basic idea is that the tree is traversed until the Node it arrives at is NULL, in which case a new Node is created and replaces the NULL Node.
-
+<body>
   <div align=center><img src="./README.assets/Kdtree_insert.png" width = "400" height = "400" alt="Kdtree_insert.png" align=center /></div>
   <div class="text" style=" text-align:center;"> <b>Tree sepparating x and y region</div>
+</body>
 
 **Searching Points in a KD-Tree:**
 
