@@ -52,14 +52,10 @@ A KD-Tree is a binary tree that splits points between alternating axes. By separ
 * The basic idea is that the tree is traversed until the Node it arrives at is NULL, in which case a new Node is created and replaces the NULL Node.
 
   <div align=center><img src="./README.assets/Kdtree_insert.png" width = "400" height = "400" alt="Kdtree_insert.png" align=center /div>
-<p>
-    <b>
-    <center>Tree sepparating x and y region</center> 
-    </b>
-</p>
-
+<figcaption style="text-align:center">Tree sepparating x and y region</figcaption>
 
 **Searching Points in a KD-Tree:**
+
 The naïve approach of finding nearby neighbors is to go through every single point in the tree and compare their distances with the target, selecting point indices that fall within the distance tolerance of the target. Instead with the KD-Tree you can compare distance within a boxed square that is 2 x `distanceTol` for length, centered around the target point. If the current node point is within this box then you can directly calculate the distance and see if the point id should be added to the list of nearby ids. Then you see if your box crosses over the node division region and if it does compare that next node. You do this recursively, with the advantage being that if the box region is not inside some division region you completely skip that branch.
 
 <div align=center><img src="./README.assets/Kdtree_search.gif" width = "450" height = "400" alt="Kdtree_search.gif" align=center /></div>
